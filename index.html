@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naitik Trader Web</title>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Naitik Trader Web</h1>
+    <div id="auth">
+        <button id="loginBtn">Login with Google</button>
+        <button id="logoutBtn" style="display: none;">Logout</button>
+    </div>
+    
+    <div id="adminPanel" style="display: none;">
+        <h2>Admin Panel (Only for Naitik)</h2>
+        <input type="text" id="ffID" placeholder="Enter Free Fire ID">
+        <input type="number" id="price" placeholder="Enter Price">
+        <button onclick="addID()">Add ID</button>
+    </div>
+
+    <h2>Available Free Fire IDs</h2>
+    <div id="idList"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
